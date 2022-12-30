@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <style>
+            nav {
+                position: relative;
+                width: 515px;
+                height: 56px;
+                margin: 50px auto;
+                border-radius: 8px;
+                font-size: 0;
+                background-color: #adb5bd;
+            }
+            nav a {
+                position: relative;
+                width: 103px;
+                height: 50px;
+                line-height: 56px;
+                font-size: 15px;
+                border-width: 3px;
+                font-family: sans-serif;
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                cursor: pointer;
+                z-index: 1;
+            }
+            nav .sliding {
+                position: absolute;
+                top: 0;
+                width: 100px;
+                height: 50px;
+                border-radius: 10px;
+                border: 3px solid #adb5bd;
+                background-color: #3a86ff;
+                transition: all .5s ease 0s;
+                z-index: 0;
+            }
+            nav .slide-tiktok {
+                left: 0;
+            }
+            nav a:nth-child(1):hover~.sliding {
+                left: 0;
+                background-color: #8338ec;
+            }
+            nav .slide-instagram {
+                left: 103px;
+            }
+            nav a:nth-child(2):hover~.sliding {
+                left: 103px;
+                background-color: #8338ec;
+            }
+            nav .slide-youtube {
+                left: 206px;
+            }
+            nav a:nth-child(3):hover~.sliding {
+                left: 206px;
+                background-color: #8338ec;
+            }
+            nav .slide-twitter {
+                left: 309px;
+            }
+            nav a:nth-child(4):hover~.sliding {
+                left: 309px;
+                background-color: #8338ec;
+            }
+            nav .slide-linkedin {
+                left: 412px;
+            }
+            nav a:nth-child(5):hover~.sliding {
+                left: 412px;
+                background-color: #8338ec;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <a href="#">TikTok</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <div class="sliding slide-tiktok"></div>
+                <div class="sliding slide-instagram"></div>
+                <div class="sliding slide-youtube"></div>
+                <div class="sliding slide-twitter"></div>
+                <div class="sliding slide-linkedin"></div>
+            </nav>
+        </div>
+    </body>
+</html>
